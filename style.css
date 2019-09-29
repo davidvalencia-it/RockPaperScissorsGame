@@ -43,9 +43,18 @@ section {
     font-size: 30px;
 }
 
+.match {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+
 .intro button,
 .match button {
-    width: 150px;
+    width: 120px;
     height: 50px;
     background: none;
     border: none;
@@ -54,14 +63,6 @@ section {
     background: rgb(231, 161, 81);
     border-radius: 5px;
     cursor: pointer;
-}
-
-.match {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.5s ease 0.5s;
 }
 
 .match h2 {
@@ -74,7 +75,12 @@ section {
     font-size: 50px;
 }
 
-.hands,
+.hands {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .options {
     display: flex;
     justify-content: space-around;
